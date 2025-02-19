@@ -28,7 +28,7 @@ p {
     background-image: url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
-    object-fit: cover;
+    
     height: 400px;
     display: flex;
     align-items: center;
@@ -81,19 +81,22 @@ p {
     cursor: pointer;
 }
 
-#addProduct {
+.addProduct {
     margin-bottom: 20px;
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     background-color: #e63946;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 150px;
+    height: 40px;
     /* Adiciona transição para suavizar a animação */
     transition: transform 0.2s ease, background-color 0.2s ease;
+
   }
   
-  #addProduct:hover {
+  .addProduct:hover {
     transform: scale(1.15); /* Aumenta 5% */
     background-color: #d62828; /* Nova cor para o hover */
   }
@@ -117,13 +120,13 @@ p {
   
   #cart-icon .cart-count {
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: -1px;
+    right: -2.5px;
     background: #fff;
     color: #e63946;
     border-radius: 50%;
     padding: 2px 6px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #cart-container {
@@ -205,9 +208,37 @@ footer {
   text-align: center;
 }
                 /*__________________________ÁREA DE RESPONSIVIDADE DO SITE_______________________*/
-@media (max-width: 180px) {
+@media (max-width: 380px) {
+    header{
+      padding: 10px;
+    }
+
+    h1{
+      font-size: 1.75rem;
+    }
+
+    p{
+      font-size: 0.5rem;
+    }
+    
+
+    #cart-icon {
+      width: 20px;
+      height: 20px;
+      
+    }
+
+
+
+
+    .hero{
+
+      object-fit: cover;
+      height: 150px;
+    }
+
     .hero h2 {
-        font-size: 1.2rem;
+        font-size: 0.75rem;
         text-align: center;
         padding: 10px;
     }
@@ -215,17 +246,40 @@ footer {
     .menu {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        padding: 15px 5px;
+        /*align-items: center;*/
     }
+
+    .menu h2{
+      font-size: 1rem;
+    }
+
 
     .scroll-container {
         justify-content: flex-start;
         padding-left: 10px;
     }
 
+    .addProduct{
+      width: 75px;
+      height: 20px;
+      font-size: 0.5rem;
+    }
+
     .card {
         flex:30vh;
-        max-width: 200px;
+        max-width: 100px;
+        font-size: 6px;
+    }
+
+    .card img{
+      width: 79%;
+      height: 75px;
+      
+    }
+
+    .card p{
+      font-size: 5px;
     }
 
     .scroll-container::after {
