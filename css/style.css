@@ -28,6 +28,7 @@ p {
     background-image: url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
+    object-fit: cover;
     height: 400px;
     display: flex;
     align-items: center;
@@ -45,7 +46,7 @@ p {
 
 .scroll-container {
     display: flex;
-    
+    justify-content: center;
     overflow-x: auto;
     gap: 15px;
     padding: 20px;
@@ -185,12 +186,23 @@ p {
     display: block;
   }
 
+
+
+  main{
+    margin-bottom: 60px;
+  }
+
                 /*__________________________ ÁREA  DO FOOTER _______________________*/
 
 footer {
-    background: #111;
-    padding: 15px;
-    font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 15px;
+  font-size: 0.9rem;
+  text-align: center;
 }
                 /*__________________________ÁREA DE RESPONSIVIDADE DO SITE_______________________*/
 @media (max-width: 180px) {
