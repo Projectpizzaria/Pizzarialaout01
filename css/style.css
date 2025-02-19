@@ -46,7 +46,7 @@ p {
 
 .scroll-container {
     display: flex;
-    justify-content: center;
+    
     overflow-x: auto;
     gap: 15px;
     padding: 20px;
