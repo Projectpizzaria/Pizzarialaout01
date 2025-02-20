@@ -216,7 +216,7 @@ footer {
   text-align: center;
 }
                 /*__________________________ÁREA DE RESPONSIVIDADE DO SITE_______________________*/
-@media (max-width: 380px) {
+@media (max-width: 463px) {
     header{
       padding: 10px;
     }
